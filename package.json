@@ -1,0 +1,12 @@
+{
+  "name": "@decorator/rune",
+  "version": "0.0.1",
+  "description": "rune-ts decorators util",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "publish": "npm publish --access public"
+  },
+  "author": "choie0423@naver.com",
+  "license": "ISC"
+}
