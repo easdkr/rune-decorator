@@ -1,5 +1,5 @@
 {
-  "name": "@decorator/rune",
+  "name": "rune-decorator",
   "version": "0.0.1",
   "description": "rune-ts decorators util",
   "main": "index.js",
