@@ -8,5 +8,9 @@
     "publish": "npm publish --access public"
   },
   "author": "choie0423@naver.com",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/easdkr/rune-decorator.git"
+  }
 }
