@@ -1,6 +1,6 @@
 {
   "name": "rune-decorator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "rune-ts decorators util",
   "scripts": {
     "build:esm": "tsc && tsc-esm-fix",
