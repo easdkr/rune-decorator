@@ -2,7 +2,6 @@
   "name": "rune-decorator",
   "version": "0.0.2",
   "description": "rune-ts decorators util",
-  "main": "index.js",
   "scripts": {
     "build:esm": "tsc && tsc-esm-fix",
     "build:cjs": "tsc -p tsconfig.cjs.json",
@@ -13,9 +12,9 @@
   "license": "ISC",
   "exports": {
     ".": {
-      "import": "./dist/esm/src/index.js",
-      "require": "./dist/cjs/src/index.js",
-      "types": "./dist/types/src/index.d.ts"
+      "import": "./dist/esm/src/server/index.js",
+      "require": "./dist/cjs/src/server/index.js",
+      "types": "./dist/types/src/server/index.d.ts"
     }
   },
   "repository": {
