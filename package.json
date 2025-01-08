@@ -1,6 +1,6 @@
 {
   "name": "rune-decorator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "rune-ts decorators util",
   "main": "index.js",
   "scripts": {
