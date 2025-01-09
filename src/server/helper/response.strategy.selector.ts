@@ -20,7 +20,7 @@ export class ResponseStrategySelector {
         this.#strategies.values(),
         find((strategy) => strategy.isCompatible(response))
       ) ?? this.#defaultStrategy;
-    console.log(strategy);
+
     return strategy;
   }
 }
