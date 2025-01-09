@@ -1,5 +1,7 @@
 # rune-decorator
 
+> 전체 예시는 [여기](https://github.com/easdkr/rune-decorator-example)에서 확인할 수 있습니다.
+
 ### Client
 
 - **@Rune.Page()**
@@ -98,7 +100,6 @@ export class AppNavigator {}
   - client application의 진입점으로 AppNavigator 에 등록된 페이지들을 hydration 작업 등을 수행한다.
 
 ```ts
-import "reflect-metadata";
 import { Rune } from "rune-decorator/client";
 import { AppNavigator } from "./client/app.navigator";
 
