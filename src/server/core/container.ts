@@ -1,5 +1,5 @@
 import { Container as TypeDiContainer } from "typedi";
-import { ClassConstructor } from "../types";
+import { ClassConstructor } from "../../types";
 
 /**
  * @summary

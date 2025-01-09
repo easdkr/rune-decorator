@@ -12,6 +12,11 @@
   "author": "choie0423@naver.com",
   "license": "ISC",
   "exports": {
+    "./client": {
+      "import": "./dist/esm/src/client/index.js",
+      "require": "./dist/cjs/src/client/index.js",
+      "types": "./dist/types/src/client/index.d.ts"
+    },
     "./server": {
       "import": "./dist/esm/src/server/index.js",
       "require": "./dist/cjs/src/server/index.js",
@@ -52,5 +57,8 @@
     "rune-ts": "^0.8.12",
     "ts-loader": "^9.5.1",
     "typedi": "^0.10.0"
+  },
+  "peerDependencies": {
+    "rune-ts": "^0.8.12"
   }
 }

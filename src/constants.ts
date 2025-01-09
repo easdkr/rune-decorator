@@ -1,0 +1,9 @@
+export const INJECTABLE_METADATA = Symbol("__injectable__");
+export const MODULE_METADATA = Symbol("__module__");
+export const PARAMTYPES_METADATA = "design:paramtypes";
+export const PROVIDERS_METADATA = "providers";
+export const CONTROLLERS_METADATA = "controllers";
+export const CONTROLLER_METADATA = Symbol("__controller__");
+export const REQUEST_METHOD_TOKEN = Symbol("__request_method__");
+export const PARAM_METADATA = Symbol("__request_param__");
+export const RESPONSE_VIEW_TOKEN = Symbol("__rune:response_view__");
