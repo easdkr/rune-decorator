@@ -6,6 +6,7 @@
     "build:esm": "tsc && tsc-esm-fix",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build": "npm run build:esm && npm run build:cjs",
+    "test": "jest",
     "prepack": "npm run build"
   },
   "author": "choie0423@naver.com",
