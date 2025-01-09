@@ -1,3 +1,4 @@
+import "reflect-metadata";
 export * from "./core";
 import { on } from "rune-ts";
 import { RunePage, RuneUseEnables, RuneNavigator } from "./common/decorators";
