@@ -1,7 +1,9 @@
 import { Page } from "rune-ts";
+import { DynamicImport } from "../../../types";
 
 export interface NavigatorOptions {
-  pages: (typeof Page<any>)[];
+  pages?: (typeof Page<any>)[];
+  dynamic?: Record<string, DynamicImport<Page<any>>>;
 }
 
 export function RuneNavigator(options: NavigatorOptions): ClassDecorator {
