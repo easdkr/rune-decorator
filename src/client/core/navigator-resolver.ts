@@ -11,14 +11,14 @@ export class NavigatorResolver {
   // TODO: 코드 정리할 것
   async resolve(navigator: any) {
     // 정적으로 등록된 페이지를 컨테이너에 등록 및 초기화
-    pipe(
-      (Reflect.getMetadata("pages", navigator) || []) as any[],
-      forEach((page) =>
-        this.container.set(Reflect.getMetadata(PAGE_METADATA, page), page)
-      )
-    );
+    // pipe(
+    //   (Reflect.getMetadata("pages", navigator) || []) as any[],
+    //   forEach((page) =>
+    //     this.container.set(Reflect.getMetadata(PAGE_METADATA, page), page)
+    //   )
+    // );
 
-    hydrate(this.container.resolveAll() as Record<string, any>);
+    // hydrate(this.container.resolveAll() as Record<string, any>);
 
     // dynamic import로 등록된 페이지를 바로 hydrate
     const content = JSON.parse(
@@ -30,6 +30,10 @@ export class NavigatorResolver {
     >;
 
     const target = await dynamic[content.key]();
+    console.log({
+      key: content.key,
+      target: target,
+    });
     hydrate({
       [content.key]: target as any,
     });

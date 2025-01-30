@@ -1,4 +1,4 @@
-import { flatMap, forEach, map, peek, pipe, toArray } from "@fxts/core";
+import { flatMap, forEach, map, peek, pipe } from "@fxts/core";
 import { Router } from "express";
 import { MetaView } from "@rune-ts/server";
 import {
