@@ -16,8 +16,9 @@ import {
   REQUEST_METHOD_TOKEN,
   RESPONSE_VIEW_TOKEN,
 } from "../../constants";
-import { IRequest, ResponseViewOptions } from "../common";
+import { IRequest } from "../common";
 import { Container } from "./container";
+import { ResponseViewOptions } from "../../shared";
 
 export class ModuleResolver {
   #router = Router();

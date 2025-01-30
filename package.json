@@ -21,6 +21,11 @@
       "import": "./dist/esm/src/server/index.js",
       "require": "./dist/cjs/src/server/index.js",
       "types": "./dist/types/src/server/index.d.ts"
+    },
+    "./shared": {
+      "import": "./dist/esm/src/shared/index.js",
+      "require": "./dist/cjs/src/shared/index.js",
+      "types": "./dist/types/src/shared/index.d.ts"
     }
   },
   "repository": {

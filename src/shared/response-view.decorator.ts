@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { View } from "rune-ts";
-import { ClassConstructor } from "../../../../types";
-import { RESPONSE_VIEW_TOKEN } from "../../../../constants";
+import { ClassConstructor } from "../types";
+import { RESPONSE_VIEW_TOKEN } from "../constants";
 
 export interface ResponseViewMiddleware {
   use(req: Request, res: Response, next: Function): void;
