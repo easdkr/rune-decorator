@@ -4,19 +4,27 @@ import { ClassConstructor } from "../../../types";
 export const PAGE_METADATA = Symbol("__rune:page__");
 
 export function RunePage(key?: string) {
-  return (target: ClassConstructor<Page<any>>) => {
+  return (
+    target: ClassConstructor<Page<any>>,
+    propertyKey?: string,
+    descriptor?: PropertyDescriptor
+  ) => {
     const runeKey = key || target.name;
-    console.log("runekey", runeKey);
-    console.log("target", target);
-    const newConstructor = function (...args: any[]) {
+    console.log({
+      target,
+      propertyKey,
+      descriptor,
+      runeKey,
+    });
+    const wrapped = function (...args: any[]) {
       const instance = new target(...args);
       instance.key = runeKey;
       return instance;
     };
 
-    newConstructor.prototype = target.prototype;
+    wrapped.prototype = target.prototype;
 
-    Reflect.defineMetadata(PAGE_METADATA, runeKey, newConstructor);
-    return newConstructor as any;
+    Reflect.defineMetadata(PAGE_METADATA, runeKey, wrapped);
+    return wrapped as any;
   };
 }
