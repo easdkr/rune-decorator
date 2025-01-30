@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import { View } from "rune-ts";
 import { ClassConstructor } from "../../../../types";
 import { RESPONSE_VIEW_TOKEN } from "../../../../constants";
-import { PAGE_METADATA } from "../../../../client/common/decorators";
 
 export interface ResponseViewMiddleware {
   use(req: Request, res: Response, next: Function): void;
@@ -26,7 +25,6 @@ export function ResponseView(options: ResponseViewOptions) {
     newConstructor.prototype = target.prototype;
 
     Reflect.defineMetadata(RESPONSE_VIEW_TOKEN, options, newConstructor);
-    Reflect.defineMetadata(PAGE_METADATA, runeKey, newConstructor);
     return newConstructor as any;
   };
 }

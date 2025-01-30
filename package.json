@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@fxts/core": "^1.4.0",
-    "@rune-ts/server": "^1.0.23",
+    "@rune-ts/server": "^1.0.24",
     "express": "^4.21.2",
     "reflect-metadata": "^0.2.2",
     "rune-ts": "^0.8.12",
